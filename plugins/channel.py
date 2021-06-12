@@ -38,7 +38,7 @@ async def addchannel(client: Bot, message: Message):
         await message.reply_text(
             "<i>Enter in correct format!\n\n<code>/add channelid</code>  or\n"
             "<code>/add @channelusername</code></i>"
-            "\n\nGet Channel id from @ChannelidHEXbot",
+            "\n\nGet Channel id from @MOVIZENiX Group",
         )
         return
     try:
@@ -190,7 +190,7 @@ async def addchannel(client: Bot, message: Message):
 
     await channelgroup(channel_id, channel_name, group_id, group_name)
 
-    await intmsg.edit_text("Channel added successfully!")
+    await intmsg.edit_text("Channel add ho geya bhai successfully!")
 
 
 @Client.on_message(filters.group & filters.command(["del"]))
@@ -270,7 +270,7 @@ async def deletechannelfilters(client: Bot, message: Message):
 @Client.on_message(filters.group & filters.command(["delall"]))
 async def delallconfirm(client: Bot, message: Message):
     await message.reply_text(
-        "Are you sure?? This will disconnect all connected channels and deletes all filters in group",
+        "sure h bhai?? This will disconnect all connected channels and deletes all filters in group",
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton(text="YES",callback_data="delallconfirm")],
             [InlineKeyboardButton(text="CANCEL",callback_data="delallcancel")]
